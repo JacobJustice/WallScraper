@@ -5,15 +5,15 @@ import urllib.request as req
 import datetime
 
 # configure here
-bot_username = "atfumbel"
-image_directory = "/users/andrewthorp/Pictures/space/"
-subreddit = 'spaceporn'
+bot_username = "username"
+image_directory = "path"
+subreddit = 'subreddit'
 
-reddit = praw.Reddit(client_id='5BKiG_ZYwqNIzg',
-                     client_secret='VnTkWOOT1TcVVnM92ikmWAYp4HU',
+reddit = praw.Reddit(client_id='fake_client_id',
+                     client_secret='fake_client_secret',
                      username=bot_username,
-                     password='Spizzero1',  # this is not my actual password
-                     user_agent='bot')
+                     password='fake_password',  # this is not my actual password
+                     user_agent='fake_bot_name')
 
 reddit_obj = reddit.subreddit(subreddit)
 
