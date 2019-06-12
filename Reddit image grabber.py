@@ -2,6 +2,9 @@ import praw
 import urllib.request as req
 import datetime
 
+username = "your_user_name"
+image_directory = "/users/" + username + "/Pictures/space/"
+
 reddit = praw.Reddit(client_id='EefyTKRTsjD9Lg',
                      client_secret='sV8ASsVbBfj9zT5JTX8eegBb8sM',
                      username='prawspaceporn',
@@ -19,4 +22,4 @@ for submission in top_spaceporn:
     if submission.preview['images'][0]['source']['width'] >= 1920 and submission.preview['images'][0]['source']['height'] >= 1080:
         req.urlretrieve(submission.preview['images'][0]['source']['url'],
                         # change 'space-images/' to the name of the directory you want to send the images
-                        "Z:\space-images\\" + submission.preview['images'][0]['id'] + " " + str(datetime.datetime.date(datetime.datetime.now())) + ".jpg")
+                        image_directory + submission.preview['images'][0]['id'] + " " + str(datetime.datetime.date(datetime.datetime.now())) + ".jpg")
