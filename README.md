@@ -1,4 +1,5 @@
-# Reddit-Spaceporn-bot
+# Wallscraper
+Meant to scrape wallpapers from reddit.
 Pulls top posts for the day and downloads them to a folder. This is designed so you can set that folder as a slideshow for your desktop background.
 
 # Setup
