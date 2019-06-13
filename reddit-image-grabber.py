@@ -1,4 +1,7 @@
-#!/usr/local/bin/python3 import praw import urllib.request as req import datetime
+#!/usr/local/bin/python3 
+import praw 
+import urllib.request as req 
+import datetime
 
 # configure here
 bot_username = "fakeUsername"
