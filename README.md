@@ -1,8 +1,10 @@
 # Reddit-Spaceporn-bot
 Pulls top posts for the day and downloads them to a folder. This is designed so you can set that folder as a slideshow for your desktop background.
 
-edit 1: 
+# Setup
+- Set up a reddit bot under the user settings -> apps
+- Put your configuration information in the configuration section, and your credentials in the bot authentication variables.
+- Set script to be run as a cron job (or your scheduler of choice)
+- Set your desktop wallpaper to rotate through target directory
 
-  adds the current date to the filename
-  
-  makes the name the reddit id of the post (to prevent special characters messing up the string and causing errors)
+
